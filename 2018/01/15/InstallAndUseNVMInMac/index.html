@@ -79,16 +79,16 @@
 
 
 
-<meta name="description" content="前言 什么是NVMNVM全称Node Version Manager，中文意思Node版本管理工具。备注：GitHub地址 为什么要使用NVM工具  因为Node.js不同版本支持的特性不一致，开发的项目需要涉及到兼容性问题。 开发的项目涉及到某个模块只支持特定的Node.js版本。  对于以上两种情况，我们都需要在开发的过程中切换Node.js不同版本，而NVM能够做到快速切换和管理Node.j">
+<meta name="description" content="前言 什么是NVM NVM全称Node Version Manager，中文意思Node版本管理工具。 备注：GitHub地址  为什么要使用NVM工具  因为Node.js不同版本支持的特性不一致，开发的项目需要涉及到兼容性问题。 开发的项目涉及到某个模块只支持特定的Node.js版本。 对于以上两种情况，我们都需要在开发的过程中切换Node.js不同版本，而NVM能够做到快速切换和管理Node">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Mac安装和使用NVM">
 <meta property="og:url" content="http://yoursite.com/2018/01/15/InstallAndUseNVMInMac/index.html">
 <meta property="og:site_name" content="龟速前进的胖子">
-<meta property="og:description" content="前言 什么是NVMNVM全称Node Version Manager，中文意思Node版本管理工具。备注：GitHub地址 为什么要使用NVM工具  因为Node.js不同版本支持的特性不一致，开发的项目需要涉及到兼容性问题。 开发的项目涉及到某个模块只支持特定的Node.js版本。  对于以上两种情况，我们都需要在开发的过程中切换Node.js不同版本，而NVM能够做到快速切换和管理Node.j">
-<meta property="og:updated_time" content="2018-01-15T16:19:27.454Z">
+<meta property="og:description" content="前言 什么是NVM NVM全称Node Version Manager，中文意思Node版本管理工具。 备注：GitHub地址  为什么要使用NVM工具  因为Node.js不同版本支持的特性不一致，开发的项目需要涉及到兼容性问题。 开发的项目涉及到某个模块只支持特定的Node.js版本。 对于以上两种情况，我们都需要在开发的过程中切换Node.js不同版本，而NVM能够做到快速切换和管理Node">
+<meta property="og:updated_time" content="2018-01-15T16:27:12.245Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Mac安装和使用NVM">
-<meta name="twitter:description" content="前言 什么是NVMNVM全称Node Version Manager，中文意思Node版本管理工具。备注：GitHub地址 为什么要使用NVM工具  因为Node.js不同版本支持的特性不一致，开发的项目需要涉及到兼容性问题。 开发的项目涉及到某个模块只支持特定的Node.js版本。  对于以上两种情况，我们都需要在开发的过程中切换Node.js不同版本，而NVM能够做到快速切换和管理Node.j">
+<meta name="twitter:description" content="前言 什么是NVM NVM全称Node Version Manager，中文意思Node版本管理工具。 备注：GitHub地址  为什么要使用NVM工具  因为Node.js不同版本支持的特性不一致，开发的项目需要涉及到兼容性问题。 开发的项目涉及到某个模块只支持特定的Node.js版本。 对于以上两种情况，我们都需要在开发的过程中切换Node.js不同版本，而NVM能够做到快速切换和管理Node">
 
 
 
@@ -299,14 +299,16 @@
 
       
         <h3 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h3><ol>
-<li>什么是NVM<br><code>NVM</code>全称<code>Node Version Manager</code>，中文意思<code>Node版本管理工具</code>。<br>备注：<a href="https://github.com/creationix/nvm" target="_blank" rel="noopener">GitHub地址</a></li>
+<li><p>什么是NVM<br> <code>NVM</code>全称<code>Node Version Manager</code>，中文意思<code>Node版本管理工具</code>。<br> 备注：<a href="https://github.com/creationix/nvm" target="_blank" rel="noopener">GitHub地址</a></p>
+</li>
 <li><p>为什么要使用NVM工具</p>
 <ol>
 <li>因为<code>Node.js</code>不同版本支持的特性不一致，开发的项目需要涉及到兼容性问题。</li>
-<li>开发的项目涉及到某个模块只支持特定的<code>Node.js</code>版本。</li>
-</ol>
+<li><p>开发的项目涉及到某个模块只支持特定的<code>Node.js</code>版本。</p>
 <p>对于以上两种情况，我们都需要在开发的过程中切换<code>Node.js</code>不同版本，而<code>NVM</code>能够做到快速切换和管理<code>Node.js</code>版本，其实对于<code>NVM</code>可以理解为<code>Python</code>的<code>virtualenv</code>或者<code>Ruby</code>的<code>rvm</code>，每个<code>Node.js</code>版本的模块都会被安装在各自版本的沙箱里面。</p>
 <p>备注：<a href="http://www.infoq.com/cn/articles/node-js-and-io-js/" target="_blank" rel="noopener">Node.js发展历史</a></p>
+</li>
+</ol>
 </li>
 </ol>
 <h3 id="NVM安装"><a href="#NVM安装" class="headerlink" title="NVM安装"></a>NVM安装</h3><ol>
@@ -322,8 +324,7 @@
 </li>
 </ol>
 <h3 id="通过NVM安装任意版本的Node-js"><a href="#通过NVM安装任意版本的Node-js" class="headerlink" title="通过NVM安装任意版本的Node.js"></a>通过NVM安装任意版本的Node.js</h3><p>因为<code>NVM</code>的服务器放在国外，再加上其它原因，造成如果使用<code>NVM</code>默认服务器来下载<code>Node.js</code>会非常慢，所以我们要先修改<code>NVM</code>的服务器镜像地址，打开<code>~/.zshrc</code>配置文件，在最后一行，增加以下内容：<br><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">NVM_NODEJS_ORG_MIRROR=https://npm.taobao.org/mirrors/node/</span><br></pre></td></tr></table></figure></p>
-<p>加入完成后在<code>Shell</code>环境下执行<code>source ~/.zshrc</code>命令重新启动一下配置。</p>
-<p>在<code>Shell</code>环境下执行<code>nvm ls-remote</code>命令，查看一下服务器目前有哪些版本的<code>Node.js</code>可以安装：<br><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">➜  ~  nvm ls-remote</span><br><span class="line">            v0.1.14</span><br><span class="line">            v0.1.15</span><br><span class="line">            v0.1.16</span><br><span class="line">            ...</span><br></pre></td></tr></table></figure></p>
+<p>加入完成后在<code>Shell</code>环境下执行<code>source ~/.zshrc</code>命令重新启动一下配置。<br>在<code>Shell</code>环境下执行<code>nvm ls-remote</code>命令，查看一下服务器目前有哪些版本的<code>Node.js</code>可以安装：<br><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">➜  ~  nvm ls-remote</span><br><span class="line">            v0.1.14</span><br><span class="line">            v0.1.15</span><br><span class="line">            v0.1.16</span><br><span class="line">            ...</span><br></pre></td></tr></table></figure></p>
 <p>在<code>Shell</code>环境下执行<code>nvm install &#39;Node.js版本号&#39;</code>命令开始安装<code>Node.js</code>，安装完成以后<code>NVM</code>会将各个版本的<code>Node.js</code>安装在<code>~/.nvm/versions/node</code>目录下。</p>
 <h3 id="NVM常用命令"><a href="#NVM常用命令" class="headerlink" title="NVM常用命令"></a>NVM常用命令</h3><ul>
 <li><code>nvm install &lt;version&gt;</code> ## 安装指定版本，可模糊安装，如：安装v4.4.0，既可<code>nvm install v4.4.0</code>，又可<code>nvm install 4.4</code></li>
