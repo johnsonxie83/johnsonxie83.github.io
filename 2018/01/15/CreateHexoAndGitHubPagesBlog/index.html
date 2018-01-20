@@ -85,7 +85,7 @@
 <meta property="og:url" content="http://yoursite.com/2018/01/15/CreateHexoAndGitHubPagesBlog/index.html">
 <meta property="og:site_name" content="龟速前进的胖子">
 <meta property="og:description" content="GitHub配置 GitHub创建仓库  创建一个Repository name为GitHub的用户名.github.io的仓库  查看GitHub Pages功能是否开启  创建完以后点击菜单Settings，找到GitHub Pages-Source选项，如果已经显示出Your site is published at https://&amp;#39;GitHub的用户名&amp;#39;.github.i">
-<meta property="og:updated_time" content="2018-01-20T12:19:22.425Z">
+<meta property="og:updated_time" content="2018-01-20T12:27:17.862Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Mac搭建Hexo + GitHub Pages博客">
 <meta name="twitter:description" content="GitHub配置 GitHub创建仓库  创建一个Repository name为GitHub的用户名.github.io的仓库  查看GitHub Pages功能是否开启  创建完以后点击菜单Settings，找到GitHub Pages-Source选项，如果已经显示出Your site is published at https://&amp;#39;GitHub的用户名&amp;#39;.github.i">
@@ -320,14 +320,11 @@
 </li>
 <li><p>配置Deployment</p>
 <p> 修改<code>_config.yml</code>配置文件：</p>
-<ul>
-<li>把第 6 行的<code>title</code>改成你想要的名字</li>
-<li>把第 9 行的<code>author</code>改成你的大名</li>
-<li>把最后一行的<code>type</code>改成<code>type: git</code>，注意<code>type</code>冒号后面需要一个空格</li>
-<li><p>在最后一行后面新增一行，左边与<code>type</code>平齐，加上一行<code>repo: 仓库地址</code>（请将仓库地址改为<code>GitHub的用户名.github.io</code>对应的仓库地址，仓库地址以<code>git@github.com:</code>开头），注意<code>repo</code>冒号后面有一个空格</p>
-<p>配置完后，安装<code>Git</code>部署插件，命令行执行以下命令：<code>npm install hexo-deployer-git --save</code></p>
-</li>
-</ul>
+<pre><code>- 把第 6 行的`title`改成你想要的名字
+- 把第 9 行的`author`改成你的大名
+- 把最后一行的`type`改成`type: git`，注意`type`冒号后面需要一个空格
+- 在最后一行后面新增一行，左边与`type`平齐，加上一行`repo: 仓库地址`（请将仓库地址改为`GitHub的用户名.github.io`对应的仓库地址，仓库地址以`git@github.com:`开头），注意`repo`冒号后面有一个空格
+</code></pre><p> 配置完后，安装<code>Git</code>部署插件，命令行执行以下命令：<code>npm install hexo-deployer-git --save</code></p>
 </li>
 <li><p>发布文章</p>
 <p> 命令行执行<code>hexo new XXX</code>，该命令会在以下路径：<code>创建的博客目录/source/_posts/</code>生成一个<code>MarkDown</code>文件，该文件内容就是文章内容，执行<code>open XXX.md</code>进行内容编辑，编辑完以后，命令行执行</p>
